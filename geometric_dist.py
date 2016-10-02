@@ -15,14 +15,6 @@ def pmf_negative_binomial_dist(x, n, p):
 def geometric_dist(n, p):
     return ((1-p)**(n-1))*(p)
 
-d = [int(i) for i in raw_input().split(" ")]
-pnum = d[0]
-dnum = d[1]
-prob = float(d[0]/(d[1]*1.0))
-if prob>1:
-    print "Error! Probability cannot exceed 1"
-n_inspec = int(raw_input())
-print "{0:0.3f}".format(geometric_dist(n_inspec, prob))
 
 def main_1():
     #Hackerrank problem on geometric distribution"
