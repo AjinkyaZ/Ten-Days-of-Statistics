@@ -12,6 +12,9 @@ def error_function(z):
         return -x
     
 def cumulative_dist_normal(x, mu, sigma):
+    """Given a value x and mean and standard deviation for a random variable following
+    the Normal distribution, find probability of the variable being less than x
+    """
     error_input = (x-mu)/(sigma*sqrt(2))
     return 0.5*(1 + error_function(error_input))
 
